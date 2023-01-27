@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Generator</title>
+</head>
+<body>
+<form method="POST" action="{{ url_for('generate_qr_code') }}">
+  <label for="data">Enter Data:</label>
+  <input type="text" id="data" name="data" placeholder="Enter Data">
+  <input type="submit" value="Generate QR Code">
+</form>
+</body>
+</html>
