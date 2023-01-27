@@ -1,1 +1,0 @@
-python3 "C:\Users\MR\PycharmProjects\botWAv2\src\botv3.py"

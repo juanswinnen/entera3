@@ -1,0 +1,26 @@
+/* This will style the h1 element */
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+/* This will style the form element */
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* This will style the input elements within the form element */
+form input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* This will style the form element */
+img {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+}

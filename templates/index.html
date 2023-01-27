@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <form method="post" action="{{url_for('generate_qr')}}">
+      <label for="order_input">Order Number:</label>
+      <input type="text" id="order_input" name="order_input" required>
+      <br>
+      <label for="name_input">Name:</label>
+      <input type="text" id="name_input" name="name_input">
+      <br><br>
+      <input type="submit" value="Generate QR">
+    </form>
+    {% if image %}
+    <img src="{{ image }}" alt="QR Code">
+    {% endif %}
+  </body>
+</html>

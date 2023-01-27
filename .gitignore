@@ -2,3 +2,5 @@
 .idea
 src/myqr.png
 src/test.py
+__pycache__
+__pycache__/app.cpython-310.pyc
