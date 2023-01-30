@@ -1,12 +1,16 @@
 from flask import Flask, render_template, request
 import qrcode
 import PIL.Image
+import os
 
 app = Flask(__name__)
 
 
 @app.route('/', methods=['GET', 'POST'])
 def generate_qr():
+    file_path = "static/qr.png"
+    if os.path.exists(file_path):
+        os.remove(file_path)
     if request.method == 'POST':
         inputText = request.form['order_input']
         inputName = request.form['name_input']
