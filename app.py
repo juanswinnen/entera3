@@ -12,7 +12,7 @@ def generate_qr():
     file_path = "static/qr.png"
     if os.path.exists(file_path):
         os.remove(file_path)
-        time.sleep{1}
+        time.sleep(1)
     if request.method == 'POST':
         inputText = request.form['order_input']
         inputName = request.form['name_input']
