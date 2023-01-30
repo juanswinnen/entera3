@@ -16,7 +16,7 @@ def generate_qr():
             img.save('static/qr.png')
             return render_template('index.html', image="static/qr.png")
         else:
-            return 'Please enter an order number'
+            return 'Ingresá un número de orden, por favor'
     else:
         return render_template('index.html')
 
@@ -24,7 +24,7 @@ def generate_qr():
 def getData(order, name):
     telephone = "5493884701268"
     if name == "":
-        baseMessage = f"Buenas! Mi pedido es el {order}."
+        baseMessage = f"Hola! Mi pedido es el {order}."
     else:
         baseMessage = f"Soy {name}! Mi pedido es el {order}."
 

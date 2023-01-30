@@ -1,16 +1,32 @@
-/* This will style the h1 element */
-h1 {
-  color: blue;
-  text-align: center;
+body {
+  background-color: #fdfeff;
 }
 
-/* This will style the form element */
+h1 {
+  color: #35363a;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  color: #35363a;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
 form {
   margin: 0 auto;
   width: 50%;
 }
 
-/* This will style the input elements within the form element */
 form input {
   padding: 12px 20px;
   margin: 8px 0;
@@ -18,9 +34,8 @@ form input {
   width: 100%;
 }
 
-/* This will style the form element */
 img {
   margin: 0 auto;
-  width: 40%;
+  width: 55%;
   display: flex;
 }

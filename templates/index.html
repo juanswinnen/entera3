@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QR Code Generator</title>
+    <title>EnterA3</title>
     <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>QR Code Generator</h1>
+    <h1>EnterA3</h1>
+    <h2>App web de mensajería para Café by Paula</h2>
     <form method="post" action="{{url_for('generate_qr')}}">
-      <label for="order_input">Order Number:</label>
+      <label for="order_input">Número de pedido:</label>
       <input type="text" id="order_input" name="order_input" required>
       <br>
-      <label for="name_input">Name:</label>
+      <label for="name_input">Nombre:</label>
       <input type="text" id="name_input" name="name_input">
       <br><br>
-      <input type="submit" value="Generate QR">
+      <input type="submit" value="Generar código QR">
     </form>
     {% if image %}
     <img src="{{ image }}" alt="QR Code">
